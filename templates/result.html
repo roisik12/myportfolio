@@ -33,6 +33,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                     </li>
+                                        </li>
+                                        <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('result') }}">Ksiega Gosci</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -41,6 +45,10 @@
     <!-- Content -->
     <div class="container mt-5">
         <h1>Lista komentarzy:</h1>
+        <br>
+        <h1></h1><a href="{{ url_for('add_entry') }}" style="background-color: green; color: white; padding: 10px; text-decoration: none;">Dodaj wpis</a>
+</h1>
+<br>
         <br>
         {% if data %}
             <div class="list-group">
